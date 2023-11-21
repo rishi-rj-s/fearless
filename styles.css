@@ -1,0 +1,276 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Times New Roman;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 100vh; 
+    overflow: hidden;
+    min-height: 100px;    
+    padding-top: 0.5rem;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30x;
+    min-height: 400px;
+    margin-right: auto;
+    font-size: 18px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: rgba(235, 144, 71, 0.842);
+    color: black;
+}
+
+ul li.active a{
+    background-color: rgba(235, 144, 71, 0.842);
+    color: black;
+}
+
+.logo img{
+    float: left;
+    width: 100px;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+.title{
+    position: absolute;
+    left: 7rem;
+    
+}
+
+.title h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.8rem;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bgmodel{
+    width: 50rem; 
+    height: 25rem;
+    position: relative; 
+    bottom: 30%; 
+    left: 22%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.bgmodel .image{
+    width: 100%;
+    height: 100%;
+}
+
+.bgmodel .image img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+    opacity: 0.8; 
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.btn{
+    border: 1px solid white;
+    border-radius: 20%;
+    padding: 5px 10px;
+    color: rgb(20, 200, 245);
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(41, 40, 40);
+    opacity: 0.8;
+}
+
+.btn:hover{
+    background-color: rgb(28, 43, 38);
+    color: white;
+}
+
+.sub-menu {
+    display: none;
+    top: 6%;
+    position: relative;
+}
+
+.sub-menu ul{
+    position: absolute;
+}
+
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+.main ul li:hover .sub-menu ul{
+    display: block;
+    margin: 1px;
+    
+}
+
+.main ul li:hover .sub-menu ul li{
+    width: auto;
+    padding: 10px;
+}
+
+.gallery {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 10);
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  .openModal {
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #f8f7f7;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+:target {
+    display: block;
+}
+
+.eqp{
+    font-size: 30px;
+    color: aquamarine;
+    padding-top: 10px;
+}
+
+.discp{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.footer{
+    background-color: darkslategray;
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.footer {
+    background-color: rgba(27, 7, 7, 1);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about, .contact {
+    width: 45%;
+}
+
+.about p, .contact p{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: rgb(158, 116, 60);
+}
+
+.about a, .contact a {
+    padding-top: 5px;
+    color: rgb(105, 105, 209);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section{
+    display: inline-flex;
+    gap: 13px;
+}
